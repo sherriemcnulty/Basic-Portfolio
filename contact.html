@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <title>Sherrie McNulty</title>
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+     <div id="main-wrapper">
+          <nav class="color-theme">
+               <div id="nav-wrapper">
+                    <div id="brand" class="color-theme-inverse serif">
+                         <h1>Sherrie McNulty</h1>
+                    </div>
+
+                    <ul id="nav-menu">
+                         <li><a href="index.html">About Me</a></li>
+                         <li class="color-blank-nav">Contact</li>
+                         <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+               </div>
+          </nav>
+
+          <section id="content-wrapper" class="margin-std color-theme">
+               <div id="content" class="margin-std">
+                    <h2 class="serif">Contact</h2>
+
+                    <hr>
+
+                    <form id="contact-form" class="color-font">
+
+                         <label for="name">Name (required):</label>
+                         <span id='name-err'></span>
+                         <br>
+                         <input type="text" id="name" name="name" class="form-field" placeholder="John Doe"
+                              aria-required="true" required>
+                         <br>
+
+
+                         <label for="email">Email (required):</label>
+                         <span id='email-err'></span>
+                         <br>
+                         <input type="email" id="email" name="email" class="form-field" placeholder="example@gmail.com"
+                              aria-required="true" required>
+                         <br>
+
+                         <label for="messge">Message (required):</label>
+                         <span id='message-err'></span>
+                         <br>
+                         <textarea type="text" id="message" name="message" class="form-field" placeholder="Type message here."
+                              aria-required="true" required></textarea>
+                         <br>
+
+                         <button id="submit-btn" type="button" class="color-theme-inverse">Submit</button>
+                         <span id="status-msg"></span>
+
+                    </form>
+               </div> <!-- end content -->
+          </section> <!-- end content-wrapper -->
+     </div> <!-- end main-wrapper  -->
+
+     <footer>
+          Copyright 2018&copy;
+     </footer>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="assets/javascript/app.js" type="text/javascript"></script>
+
+</body>
+
+</html>
