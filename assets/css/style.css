@@ -1,4 +1,4 @@
-/***  containers  ***/
+/* Elements */
 html,
 body {
      height: 100%;
@@ -19,6 +19,12 @@ body {
      color: #777;
 }
 
+button {
+
+     padding: 5px 10px;
+     border: 3px outset #ccc;
+}
+
 footer {
      margin-bottom: 0;
      width: 100%;
@@ -34,6 +40,10 @@ footer {
 hr {
      color: #ccc;
      border-bottom: 2px solid #ccc;
+}
+
+input:focus {
+     background-color: yellow;
 }
 
 li {
@@ -55,6 +65,15 @@ nav {
      border-bottom: 2px solid #ccc;
 }
 
+textarea {
+     height: 100px;
+}
+
+textarea:focus {
+     background: yellow;
+}
+
+/* Pseudo-classes */
 a:link,
 a:visited {
      text-decoration: none;
@@ -66,27 +85,7 @@ a:visited:hover {
      color: #ccc;
 }
 
-#main-wrapper {
-     flex: 1 0 auto;
-     margin: 0;
-     background-image: url("../images/background.jpg");
-}
-
-#content-wrapper {
-     clear: both;
-     float: none;
-     width: 960px;
-     margin: 5% auto;
-     text-align: justify;
-     border: 1px solid #ddd;
-}
-
-#content {
-     margin: 20px;
-     text-align: justify;
-}
-
-
+/* Classes */
 .color-blank-nav {
      color: #333;
 }
@@ -105,49 +104,14 @@ a:visited:hover {
      background-color: #4aaaa5;
 }
 
-.serif {
-     font-family: 'Georgia',
-          Times,
-          'Times New Roman',
-          serif;
+.demo-btn {
+     height: 200px;
+     width: auto;
+     margin-top: 25px;
+     margin-left: 0px;
+     margin-right: 50px;
+     border: 3px outset #ccc;
 }
-
-/***  header bar / navbar  ***/
-
-
-#nav-wrapper {
-     width: 960px;
-     margin: auto;
-}
-
-#navbar {
-     background-color: white;
-}
-
-#nav-menu {
-     float: right;
-}
-
-#brand {
-     position: relative;
-     display: inline-block;
-     margin-top: 0;
-     margin-left: 0;
-     padding-left: 50px;
-     padding-right: 50px;
-}
-
-/***  index page specific ***/
-
-#profile-img {
-     float: left;
-     height: 175px;
-     width: 150px;
-     margin-right: 20px;
-     margin-bottom: 20px;
-}
-
-/*** contact page specific  ***/
 
 .form-field {
      width: 100%;
@@ -157,42 +121,60 @@ a:visited:hover {
      border: 1px solid #777;
 }
 
-input:focus {
-     background-color: yellow;
+.serif {
+     font-family: 'Georgia',
+          Times,
+          'Times New Roman',
+          serif;
 }
 
-textarea {
-     height: 100px;
+/* IDs */
+#brand {
+     position: relative;
+     display: inline-block;
+     margin-top: 0;
+     margin-left: 0;
+     padding-left: 50px;
+     padding-right: 50px;
 }
 
-textarea:focus {
-     background: yellow;
+#content {
+     margin: 20px;
+     text-align: justify;
 }
 
-button {
-
-     padding: 5px 10px;
-     border: 3px outset #ccc;
+#content-wrapper {
+     clear: both;
+     float: none;
+     width: 960px;
+     margin: 5% auto;
+     text-align: justify;
+     border: 1px solid #ddd;
 }
 
-#name-err,
-#email-err,
-#message-err {
-     color: red;
+#main-wrapper {
+     flex: 1 0 auto;
+     margin: 0;
+     background-image: url("../images/background.jpg");
 }
 
-#status-msg {
-     color: green;
+#nav-wrapper {
+     width: 960px;
+     margin: auto;
 }
 
+#nav-menu {
+     float: right;
+}
 
-/***  portfolio page specific  ***/
+#navbar {
+     background-color: white;
+}
 
-.demo-btn {
-     height: 200px;
-     width: auto;
-     margin-top: 25px;
-     margin-left: 0px;
-     margin-right: 50px;
-     border: 3px outset #ccc;
+#profile-img {
+     float: left;
+     height: 175px;
+     width: 150px;
+     margin-right: 20px;
+     margin-bottom: 20px;
 }
